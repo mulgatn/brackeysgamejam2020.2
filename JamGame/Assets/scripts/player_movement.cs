@@ -10,6 +10,7 @@ public class player_movement : MonoBehaviour
     private Rigidbody2D body_;
     private BoxCollider2D collider_;
     private Transform player_ghost_;
+    private TrailRenderer trail_renderer_;
 
     [SerializeField] private float speed_;
     [SerializeField] private float jump_force_;
@@ -39,6 +40,7 @@ public class player_movement : MonoBehaviour
     {
         body_ = GetComponent<Rigidbody2D>();
         collider_ = GetComponent<BoxCollider2D>();
+        trail_renderer_ = GetComponent<TrailRenderer>();
 
         player_ghost_ = transform.GetChild(0);
 
@@ -123,6 +125,7 @@ public class player_movement : MonoBehaviour
             rewinding_ = true;
             body_.isKinematic = true;
             collider_.enabled = false;
+            trail_renderer_.enabled = false;
         }
 
         rewind_timer_ += Time.deltaTime;
@@ -145,6 +148,7 @@ public class player_movement : MonoBehaviour
             rewind_timer_ = 0;
             body_.isKinematic = false;
             collider_.enabled = true;
+            trail_renderer_.enabled = true;
         }
     }
 
