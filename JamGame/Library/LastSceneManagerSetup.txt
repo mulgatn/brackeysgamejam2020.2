@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_scenes/Peace's Playground.unity
+- path: Assets/_scenes/Tutorial.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

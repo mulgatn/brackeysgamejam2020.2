@@ -42,8 +42,8 @@ public class player_movement : MonoBehaviour
         collider_ = GetComponent<BoxCollider2D>();
         trail_renderer_ = GetComponent<TrailRenderer>();
 
+        trail_renderer_.time = rewind_time_;
         player_ghost_ = transform.GetChild(0);
-
         rewind_key_frames_ = new List<RewindKeyFrames>();
     }
 
