@@ -1,9 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_scenes/Tutorial.unity
-=======
-- path: Assets/_scenes/Linus' Playground 1.unity
->>>>>>> master
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+sceneSetups: []
